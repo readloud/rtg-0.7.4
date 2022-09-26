@@ -1,0 +1,480 @@
+# Makefile.in generated automatically by automake 1.5 from Makefile.am.
+
+# Copyright 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001
+# Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+@SET_MAKE@
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_HEADER = $(INSTALL_DATA)
+transform = @program_transform_name@
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = @host_alias@
+host_triplet = @host@
+AMTAR = @AMTAR@
+AWK = @AWK@
+CC = @CC@
+CGI_LIB_DIR = @CGI_LIB_DIR@
+CPP = @CPP@
+DEPDIR = @DEPDIR@
+EXEEXT = @EXEEXT@
+GD_LIB_DIR = @GD_LIB_DIR@
+INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+LN_S = @LN_S@
+MYSQL_DIR = @MYSQL_DIR@
+OBJEXT = @OBJEXT@
+PACKAGE = @PACKAGE@
+RANLIB = @RANLIB@
+RTG_HOME = @RTG_HOME@
+VERSION = @VERSION@
+ac_aux_dir = @ac_aux_dir@
+am__include = @am__include@
+am__quote = @am__quote@
+install_sh = @install_sh@
+PNG_LIB_DIR = @PNG_LIB_DIR@
+
+ZLIB_LIB_DIR = @ZLIB_LIB_DIR@
+
+INCLUDES = -I$(top_srcdir)/$(ZLIB_LIB_DIR) -I$(top_srcdir)/$(PNG_LIB_DIR)
+
+noinst_LIBRARIES = libgd.a
+
+libgd_a_SOURCES = \
+	gd.c		gd_io.c     	gd_io_dp.c	gd_io_file.c \
+	gd_png.c	gdfontg.c	gdfontl.c	gdfontmb.c   \
+	gdfontmb.c	gdfonts.c	gdhelpers.c 	gdtables.c   \
+	gd.h		gd_io.h		gdcache.h	gdfontg.h \
+	gdfontl.h	gdfontmb.h	gdfonts.h	gdfontt.h \
+	gdhelpers.h 
+
+
+libgd_a_CFLAGS = -DHAVE_LIBPNG
+
+EXTRA_DIST = \
+	index.html 	readme.txt 	gd2copypal.c 	gd2time.c \
+	gd2topng.c 	gdcache.c	gddemo.c	gdkanji.c \
+	gdparttopng.c	gdtest.c	gdtestft.c	gdtestttf.c\
+	gdtopng.c	mathmake.c	pngtogd.c	pngtogd2.c \
+	gdft.c		gd_ss.c		gd_io_ss.c	gd_gd.c	   \
+	gd_gd2.c	gd_jpeg.c	wbmp.c		webpng.c
+
+subdir = gd-1.8.4
+mkinstalldirs = $(SHELL) $(top_srcdir)/config/mkinstalldirs
+CONFIG_HEADER = $(top_builddir)/config/config.h
+CONFIG_CLEAN_FILES =
+LIBRARIES = $(noinst_LIBRARIES)
+
+libgd_a_AR = $(AR) cru
+libgd_a_LIBADD =
+am_libgd_a_OBJECTS = libgd_a-gd.$(OBJEXT) libgd_a-gd_io.$(OBJEXT) \
+	libgd_a-gd_io_dp.$(OBJEXT) libgd_a-gd_io_file.$(OBJEXT) \
+	libgd_a-gd_png.$(OBJEXT) libgd_a-gdfontg.$(OBJEXT) \
+	libgd_a-gdfontl.$(OBJEXT) libgd_a-gdfontmb.$(OBJEXT) \
+	libgd_a-gdfontmb.$(OBJEXT) libgd_a-gdfonts.$(OBJEXT) \
+	libgd_a-gdhelpers.$(OBJEXT) libgd_a-gdtables.$(OBJEXT)
+libgd_a_OBJECTS = $(am_libgd_a_OBJECTS)
+
+DEFS = @DEFS@
+DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)/config
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+depcomp = $(SHELL) $(top_srcdir)/config/depcomp
+@AMDEP_TRUE@DEP_FILES = $(DEPDIR)/libgd_a-gd.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gd_io.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gd_io_dp.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gd_io_file.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gd_png.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdfontg.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdfontl.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdfontmb.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdfonts.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdhelpers.Po \
+@AMDEP_TRUE@	$(DEPDIR)/libgd_a-gdtables.Po
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+CFLAGS = @CFLAGS@
+DIST_SOURCES = $(libgd_a_SOURCES)
+DIST_COMMON = Makefile.am Makefile.in
+SOURCES = $(libgd_a_SOURCES)
+
+all: all-am
+
+.SUFFIXES:
+.SUFFIXES: .c .o .obj
+$(srcdir)/Makefile.in:  Makefile.am  $(top_srcdir)/configure.in $(ACLOCAL_M4)
+	cd $(top_srcdir) && \
+	  $(AUTOMAKE) --foreign  gd-1.8.4/Makefile
+Makefile:  $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) && \
+	  CONFIG_HEADERS= CONFIG_LINKS= \
+	  CONFIG_FILES=$(subdir)/$@ $(SHELL) ./config.status
+
+AR = ar
+
+clean-noinstLIBRARIES:
+	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
+libgd_a-gd.$(OBJEXT): gd.c
+libgd_a-gd_io.$(OBJEXT): gd_io.c
+libgd_a-gd_io_dp.$(OBJEXT): gd_io_dp.c
+libgd_a-gd_io_file.$(OBJEXT): gd_io_file.c
+libgd_a-gd_png.$(OBJEXT): gd_png.c
+libgd_a-gdfontg.$(OBJEXT): gdfontg.c
+libgd_a-gdfontl.$(OBJEXT): gdfontl.c
+libgd_a-gdfontmb.$(OBJEXT): gdfontmb.c
+libgd_a-gdfonts.$(OBJEXT): gdfonts.c
+libgd_a-gdhelpers.$(OBJEXT): gdhelpers.c
+libgd_a-gdtables.$(OBJEXT): gdtables.c
+libgd.a: $(libgd_a_OBJECTS) $(libgd_a_DEPENDENCIES) 
+	-rm -f libgd.a
+	$(libgd_a_AR) libgd.a $(libgd_a_OBJECTS) $(libgd_a_LIBADD)
+	$(RANLIB) libgd.a
+
+mostlyclean-compile:
+	-rm -f *.$(OBJEXT) core *.core
+
+distclean-compile:
+	-rm -f *.tab.c
+
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gd.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gd_io.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gd_io_dp.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gd_io_file.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gd_png.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdfontg.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdfontl.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdfontmb.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdfonts.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdhelpers.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/libgd_a-gdtables.Po@am__quote@
+
+distclean-depend:
+	-rm -rf $(DEPDIR)
+
+.c.o:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `test -f $< || echo '$(srcdir)/'`$<
+
+.c.obj:
+@AMDEP_TRUE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/$*.Po' tmpdepfile='$(DEPDIR)/$*.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(COMPILE) -c `cygpath -w $<`
+
+libgd_a-gd.o: gd.c
+@AMDEP_TRUE@	source='gd.c' object='libgd_a-gd.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd.o `test -f gd.c || echo '$(srcdir)/'`gd.c
+
+libgd_a-gd.obj: gd.c
+@AMDEP_TRUE@	source='gd.c' object='libgd_a-gd.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd.obj `cygpath -w gd.c`
+
+libgd_a-gd_io.o: gd_io.c
+@AMDEP_TRUE@	source='gd_io.c' object='libgd_a-gd_io.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io.o `test -f gd_io.c || echo '$(srcdir)/'`gd_io.c
+
+libgd_a-gd_io.obj: gd_io.c
+@AMDEP_TRUE@	source='gd_io.c' object='libgd_a-gd_io.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io.obj `cygpath -w gd_io.c`
+
+libgd_a-gd_io_dp.o: gd_io_dp.c
+@AMDEP_TRUE@	source='gd_io_dp.c' object='libgd_a-gd_io_dp.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io_dp.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io_dp.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io_dp.o `test -f gd_io_dp.c || echo '$(srcdir)/'`gd_io_dp.c
+
+libgd_a-gd_io_dp.obj: gd_io_dp.c
+@AMDEP_TRUE@	source='gd_io_dp.c' object='libgd_a-gd_io_dp.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io_dp.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io_dp.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io_dp.obj `cygpath -w gd_io_dp.c`
+
+libgd_a-gd_io_file.o: gd_io_file.c
+@AMDEP_TRUE@	source='gd_io_file.c' object='libgd_a-gd_io_file.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io_file.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io_file.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io_file.o `test -f gd_io_file.c || echo '$(srcdir)/'`gd_io_file.c
+
+libgd_a-gd_io_file.obj: gd_io_file.c
+@AMDEP_TRUE@	source='gd_io_file.c' object='libgd_a-gd_io_file.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_io_file.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_io_file.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_io_file.obj `cygpath -w gd_io_file.c`
+
+libgd_a-gd_png.o: gd_png.c
+@AMDEP_TRUE@	source='gd_png.c' object='libgd_a-gd_png.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_png.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_png.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_png.o `test -f gd_png.c || echo '$(srcdir)/'`gd_png.c
+
+libgd_a-gd_png.obj: gd_png.c
+@AMDEP_TRUE@	source='gd_png.c' object='libgd_a-gd_png.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gd_png.Po' tmpdepfile='$(DEPDIR)/libgd_a-gd_png.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gd_png.obj `cygpath -w gd_png.c`
+
+libgd_a-gdfontg.o: gdfontg.c
+@AMDEP_TRUE@	source='gdfontg.c' object='libgd_a-gdfontg.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontg.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontg.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontg.o `test -f gdfontg.c || echo '$(srcdir)/'`gdfontg.c
+
+libgd_a-gdfontg.obj: gdfontg.c
+@AMDEP_TRUE@	source='gdfontg.c' object='libgd_a-gdfontg.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontg.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontg.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontg.obj `cygpath -w gdfontg.c`
+
+libgd_a-gdfontl.o: gdfontl.c
+@AMDEP_TRUE@	source='gdfontl.c' object='libgd_a-gdfontl.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontl.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontl.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontl.o `test -f gdfontl.c || echo '$(srcdir)/'`gdfontl.c
+
+libgd_a-gdfontl.obj: gdfontl.c
+@AMDEP_TRUE@	source='gdfontl.c' object='libgd_a-gdfontl.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontl.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontl.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontl.obj `cygpath -w gdfontl.c`
+
+libgd_a-gdfontmb.o: gdfontmb.c
+@AMDEP_TRUE@	source='gdfontmb.c' object='libgd_a-gdfontmb.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontmb.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontmb.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontmb.o `test -f gdfontmb.c || echo '$(srcdir)/'`gdfontmb.c
+
+libgd_a-gdfontmb.obj: gdfontmb.c
+@AMDEP_TRUE@	source='gdfontmb.c' object='libgd_a-gdfontmb.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfontmb.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfontmb.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfontmb.obj `cygpath -w gdfontmb.c`
+
+libgd_a-gdfonts.o: gdfonts.c
+@AMDEP_TRUE@	source='gdfonts.c' object='libgd_a-gdfonts.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfonts.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfonts.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfonts.o `test -f gdfonts.c || echo '$(srcdir)/'`gdfonts.c
+
+libgd_a-gdfonts.obj: gdfonts.c
+@AMDEP_TRUE@	source='gdfonts.c' object='libgd_a-gdfonts.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdfonts.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdfonts.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdfonts.obj `cygpath -w gdfonts.c`
+
+libgd_a-gdhelpers.o: gdhelpers.c
+@AMDEP_TRUE@	source='gdhelpers.c' object='libgd_a-gdhelpers.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdhelpers.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdhelpers.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdhelpers.o `test -f gdhelpers.c || echo '$(srcdir)/'`gdhelpers.c
+
+libgd_a-gdhelpers.obj: gdhelpers.c
+@AMDEP_TRUE@	source='gdhelpers.c' object='libgd_a-gdhelpers.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdhelpers.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdhelpers.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdhelpers.obj `cygpath -w gdhelpers.c`
+
+libgd_a-gdtables.o: gdtables.c
+@AMDEP_TRUE@	source='gdtables.c' object='libgd_a-gdtables.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdtables.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdtables.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdtables.o `test -f gdtables.c || echo '$(srcdir)/'`gdtables.c
+
+libgd_a-gdtables.obj: gdtables.c
+@AMDEP_TRUE@	source='gdtables.c' object='libgd_a-gdtables.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@	depfile='$(DEPDIR)/libgd_a-gdtables.Po' tmpdepfile='$(DEPDIR)/libgd_a-gdtables.TPo' @AMDEPBACKSLASH@
+@AMDEP_TRUE@	$(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgd_a_CFLAGS) $(CFLAGS) -c -o libgd_a-gdtables.obj `cygpath -w gdtables.c`
+CCDEPMODE = @CCDEPMODE@
+uninstall-info-am:
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	mkid -fID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) \
+		$(TAGS_FILES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS) $(TAGS_FILES)'; \
+	unique=`for i in $$list; do \
+	    if test -f "$$i"; then echo $$i; else echo $(srcdir)/$$i; fi; \
+	  done | \
+	  $(AWK) '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || etags $(ETAGS_ARGS) $$tags  $$unique $(LISP)
+
+GTAGS:
+	here=`CDPATH=: && cd $(top_builddir) && pwd` \
+	  && cd $(top_srcdir) \
+	  && gtags -i $(GTAGS_ARGS) $$here
+
+distclean-tags:
+	-rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH
+
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+
+top_distdir = ..
+distdir = $(top_distdir)/$(PACKAGE)-$(VERSION)
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  if test -f $$file; then d=.; else d=$(srcdir); fi; \
+	  dir=`echo "$$file" | sed -e 's,/[^/]*$$,,'`; \
+	  if test "$$dir" != "$$file" && test "$$dir" != "."; then \
+	    $(mkinstalldirs) "$(distdir)/$$dir"; \
+	  fi; \
+	  if test -d $$d/$$file; then \
+	    cp -pR $$d/$$file $(distdir) \
+	    || exit 1; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || cp -p $$d/$$file $(distdir)/$$file \
+	    || exit 1; \
+	  fi; \
+	done
+check-am: all-am
+check: check-am
+all-am: Makefile $(LIBRARIES)
+
+installdirs:
+
+install: install-am
+install-exec: install-exec-am
+install-data: install-data-am
+uninstall: uninstall-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+
+installcheck: installcheck-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
+	  `test -z '$(STRIP)' || \
+	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES) stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+	@echo "This command is intended for maintainers to use"
+	@echo "it deletes files that may require special tools to rebuild."
+clean: clean-am
+
+clean-am: clean-generic clean-noinstLIBRARIES mostlyclean-am
+
+distclean: distclean-am
+
+distclean-am: clean-am distclean-compile distclean-depend \
+	distclean-generic distclean-tags
+
+dvi: dvi-am
+
+dvi-am:
+
+info: info-am
+
+info-am:
+
+install-data-am:
+
+install-exec-am:
+
+install-info: install-info-am
+
+install-man:
+
+installcheck-am:
+
+maintainer-clean: maintainer-clean-am
+
+maintainer-clean-am: distclean-am maintainer-clean-generic
+
+mostlyclean: mostlyclean-am
+
+mostlyclean-am: mostlyclean-compile mostlyclean-generic
+
+uninstall-am: uninstall-info-am
+
+.PHONY: GTAGS all all-am check check-am clean clean-generic \
+	clean-noinstLIBRARIES distclean distclean-compile \
+	distclean-depend distclean-generic distclean-tags distdir dvi \
+	dvi-am info info-am install install-am install-data \
+	install-data-am install-exec install-exec-am install-info \
+	install-info-am install-man install-strip installcheck \
+	installcheck-am installdirs maintainer-clean \
+	maintainer-clean-generic mostlyclean mostlyclean-compile \
+	mostlyclean-generic tags uninstall uninstall-am \
+	uninstall-info-am
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
