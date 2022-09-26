@@ -47,12 +47,12 @@ RTG is complex to setup, so please read all of the documentation.
   a. Build RTG and install into default location /usr/local/rtg:
   
   ```
-         $ gzip -d rtg-x.y.tar.gz
-         $ tar -xvf rtg-x.y.tar
-	 $ cd rtg-x.y/
-         $ ./configure
-	 $ make
-	 # make install
+  $ gzip -d rtg-x.y.tar.gz
+  $ tar -xvf rtg-x.y.tar
+  $ cd rtg-x.y/
+  $ ./configure
+  $ make
+  # make install
   ```
 	 
   b. Make certain the MySQL database is installed and running.
@@ -258,13 +258,14 @@ RTG includes two Perl scripts in $prefix/bin that generate per-customer
 traffic reports.  These Perl scripts use the Perl-MySQL DBI (see the
 prerequisites section for details).  The first script is report.pl:
 
-USAGE: ```./report.pl <customer> -[##d][##h][##m][##s]```
-   OR: ```./report.pl <customer> <mm/dd/yyyy[+hh:mm[:ss]]> <mm/dd/yyyy[+hh:mm[:ss]]>```
+USAGE: ~~~./report.pl <customer> -[##d][##h][##m][##s]~~~
+   OR: ~~~./report.pl <customer> <mm/dd/yyyy[+hh:mm[:ss]]> <mm/dd/yyyy[+hh:mm[:ss]]>~~~
 
 Give report a customer name or partial customer name as it appears on the
 interface description of the network device and report will generate a
 traffic report for all matching customers in the network. For example:
-```
+
+~~~
 Blah Industries Traffic
 Period: [08/05/2002 00:00 to 08/05/2002 23:59]
 
@@ -273,15 +274,15 @@ Connection               MBytes   MBytes    Mbps    Mbps   In %   Out%    Mbps  
 -------------------------------------------------------------------------------------------------------
 at-1/2/0.104 core1.abc       18       20    0.01    0.01   0.01   0.01    0.01    0.01   0.01   0.01
 at-1/2/0.109 core1.xyz      411      586    0.11    0.16   0.07   0.10    0.43    0.50   0.28   0.32
-```
+~~~
 The second script is 95.pl:
 
-USAGE: ```./95.pl <customer> -[##d][##h][##m][##s]```
-   OR: ```./95.pl <customer> <mm/dd/yyyy[+hh:mm[:ss]]> <mm/dd/yyyy[+hh:mm[:ss]]>```
+USAGE: ~~~./95.pl <customer> -[##d][##h][##m][##s]~~~
+   OR: ~~~./95.pl <customer> <mm/dd/yyyy[+hh:mm[:ss]]> <mm/dd/yyyy[+hh:mm[:ss]]>~~~
 
 The 95.pl script generates 95th percentile traffic rates for a particular
 customer for the previous day.  For example:
-```
+~~~
 Blah Industries Traffic
 Period: [08/05/2002 00:00 to 08/05/2002 23:59]
 
@@ -290,7 +291,8 @@ Connection                 Mbps      Mbps     Mbps     Mbps     Mbps     Mbps
 -------------------------------------------------------------------------------
 at-1/2/0.104 core1.abc     0.01      0.01     0.01     0.01     0.01     0.01
 at-1/2/0.109 core1.xyz     0.11      0.16     0.43     0.50     0.33     0.45
-```
+~~~
+	
 It is convenient to supply these Perl scripts the proper arguments in a
 cron job in order to take automated actions (email, bill, report, etc) 
 each night or week.
