@@ -1,0 +1,5 @@
+## Process this file with automake to produce Makefile.in
+
+noinst_LIBRARIES = libcgi.a
+
+libcgi_a_SOURCES = cgi.c cgi.h
